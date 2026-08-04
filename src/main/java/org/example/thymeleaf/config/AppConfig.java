@@ -27,13 +27,13 @@ public class AppConfig {
         return new MyBean("dev");
     }
 
-    @Bean
-//    public String beanTest(MyBean myBean) {
-    // primary가 없다고 가정할 시 prod, dev 모두가 잡힘 -> profile은 중복 활성화가 가능
-    // -> 하나를 골르던가(Qualifier) 혹은 기본값(Primary)을 골라야함
-    public String beanTest(@Qualifier("devMyBean2") MyBean myBean) {
-        return "beanTest";
-    }
+//    @Bean
+////    public String beanTest(MyBean myBean) {
+//    // primary가 없다고 가정할 시 prod, dev 모두가 잡힘 -> profile은 중복 활성화가 가능
+//    // -> 하나를 골르던가(Qualifier) 혹은 기본값(Primary)을 골라야함
+//    public String beanTest(@Qualifier("devMyBean2") MyBean myBean) {
+//        return "beanTest";
+//    }
 
     @Bean
     @Profile("prod")
