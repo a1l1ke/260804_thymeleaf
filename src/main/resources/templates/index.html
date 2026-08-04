@@ -48,5 +48,11 @@
             <mark th:if="${pizza.price >= 10000}">비싸다</mark>
         </div>
     </section>
+    <section>
+        <p th:text="${data}"></p>
+        <p>[[${data}]]</p>
+<!--        <p th:utext="${data}"></p>-->
+        <p>[(${data})]</p>
+    </section>
 </body>
 </html>
